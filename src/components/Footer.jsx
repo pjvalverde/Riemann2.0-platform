@@ -4,14 +4,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-navy-500 flex items-center justify-center">
-              <span className="text-accent-400 font-bold font-serif">R</span>
-            </div>
-            <span className="text-white font-bold tracking-tight">
-              Riemann<span className="text-accent-400">Academy</span>
-            </span>
-          </div>
+          <a href="#inicio" className="flex items-center">
+            <img
+              src="/images/LOGO-MARZO-2026-OFICIAL.jpg"
+              alt="Riemann Academy"
+              className="h-10 w-auto"
+            />
+          </a>
 
           {/* Links */}
           <div className="flex gap-8">

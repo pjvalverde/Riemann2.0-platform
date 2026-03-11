@@ -78,11 +78,14 @@ export default function About() {
               {/* Decorative math */}
               <div className="absolute top-6 right-8 text-white/10 text-5xl font-serif">∑</div>
 
-              <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-8">
-                <span className="text-accent-400 text-3xl font-serif font-bold">R</span>
-              </div>
+              <img
+                src="/images/LOGO-MARZO-2026-OFICIAL.jpg"
+                alt="Riemann Academy"
+                className="h-20 w-auto rounded-xl mb-8"
+              />
 
-              <h3 className="text-2xl font-bold mb-4">Riemann Academy</h3>
+              <h3 className="text-2xl font-bold mb-1">Riemann Academy</h3>
+              <p className="text-accent-400 text-sm font-medium mb-4">Soluciones Académicas Directas</p>
 
               <p className="text-white/70 leading-relaxed mb-8">
                 Fundada con la visión de elevar el nivel académico en materias

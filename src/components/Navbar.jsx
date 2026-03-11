@@ -12,17 +12,16 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-700/95 backdrop-blur-md border-b border-white/10 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-lg bg-navy-500 flex items-center justify-center">
-              <span className="text-accent-400 font-bold text-lg font-serif">R</span>
-            </div>
-            <span className="text-navy-500 font-bold text-lg tracking-tight">
-              Riemann<span className="text-accent-500">Academy</span>
-            </span>
+            <img
+              src="/images/LOGO-MARZO-2026-OFICIAL.jpg"
+              alt="Riemann Academy"
+              className="h-12 w-auto rounded"
+            />
           </a>
 
           {/* Desktop links */}
@@ -31,14 +30,14 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-gray-600 hover:text-navy-500 transition-colors"
+                className="text-sm font-medium text-white/70 hover:text-white transition-colors"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#contacto"
-              className="bg-navy-500 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-navy-600 transition-colors"
+              className="bg-accent-500 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-accent-600 transition-colors"
             >
               Agendar Clase
             </a>
@@ -47,7 +46,7 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-gray-600 hover:text-navy-500"
+            className="md:hidden p-2 text-white/70 hover:text-white"
             aria-label="Menú"
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -63,14 +62,14 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-lg">
+        <div className="md:hidden bg-navy-700 border-t border-white/10 shadow-lg">
           <div className="px-4 py-4 space-y-3">
             {links.map(link => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-sm font-medium text-gray-600 hover:text-navy-500 py-2"
+                className="block text-sm font-medium text-white/70 hover:text-white py-2"
               >
                 {link.label}
               </a>
@@ -78,7 +77,7 @@ export default function Navbar() {
             <a
               href="#contacto"
               onClick={() => setIsOpen(false)}
-              className="block bg-navy-500 text-white px-5 py-2.5 rounded-lg text-sm font-semibold text-center hover:bg-navy-600 transition-colors"
+              className="block bg-accent-500 text-white px-5 py-2.5 rounded-lg text-sm font-semibold text-center hover:bg-accent-600 transition-colors"
             >
               Agendar Clase
             </a>
