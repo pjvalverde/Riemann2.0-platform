@@ -6,9 +6,9 @@ export default function Footer() {
           {/* Logo */}
           <a href="#inicio" className="flex items-center">
             <img
-              src="/images/LOGO-MARZO-2026-OFICIAL.jpg"
+              src="/images/LOGO-LIMPIO.jpg"
               alt="Riemann Academy"
-              className="h-10 w-auto"
+              className="h-10 w-auto rounded"
             />
           </a>
 
