@@ -18,7 +18,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-3 group">
             <img
-              src="/images/LOGO-LIMPIO.jpg"
+              src="/images/LOGO-OFICIAL-RA.jpg"
               alt="Riemann Academy"
               className="h-10 w-auto rounded"
             />

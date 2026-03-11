@@ -79,7 +79,7 @@ export default function About() {
               <div className="absolute top-6 right-8 text-white/10 text-5xl font-serif">∑</div>
 
               <img
-                src="/images/LOGO-LIMPIO.jpg"
+                src="/images/LOGO-OFICIAL-RA.jpg"
                 alt="Riemann Academy"
                 className="h-20 w-auto rounded-xl mb-8"
               />
